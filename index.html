@@ -282,7 +282,7 @@ h1,h2{font-family:'Fredoka',sans-serif;letter-spacing:.02em;text-align:center}
   <section class="scene" id="collage">
     <div class="notebook">
       <span class="cam">📷</span>
-      <div class="script">Beautiful</div>
+      <div class="script">My Beautiful Angel</div>
       <div class="heart drag ph" data-photo="1" style="--i:1;left:3%;top:3%;width:25%;aspect-ratio:1"></div>
       <div class="heart drag ph" data-photo="2" style="--i:2;left:37.5%;top:1%;width:25%;aspect-ratio:1"></div>
       <div class="heart drag ph" data-photo="3" style="--i:3;right:3%;top:3%;width:25%;aspect-ratio:1"></div>
@@ -318,14 +318,14 @@ h1,h2{font-family:'Fredoka',sans-serif;letter-spacing:.02em;text-align:center}
     <div class="title-red" style="transform:rotate(-3deg)">Virtual hug for ya!</div>
     <div id="hugBear"></div>
     <div class="miss caret" id="missTxt"></div>
-    <div class="hugc" id="hugCount">tap the bears to hug 🤗</div>
+    <div class="hugc" id="hugCount">tap the penguin to hug 🤗</div>
     <button class="clickme" data-go="love"><svg viewBox="0 0 64 58"><use href="#hb"/></svg><span>CLICK<br>ME</span></button>
   </section>
 
   <!-- 5b. I LOVE YOU -->
   <section class="scene" id="love">
     <div class="ily caret" id="ilyTxt"></div>
-    <div class="ily2">thank you for being my everything 🥹❤️ · tap for fireworks 🎆</div>
+    <div class="ily2">thank you for being my love forever 🥹❤️ ·  You are one of very special person for me </div>
     <button class="back" data-go="choose">← back</button>
     <button class="back" id="replay" style="left:auto;right:14px">↻ replay</button>
   </section>
@@ -354,12 +354,12 @@ const CONFIG = {
     "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Emperor_penguin.jpg/600px-Emperor_penguin.jpg",
     "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Emperor_penguins.jpg/600px-Emperor_penguins.jpg"
   ],
-  letterTitle: "HAPPY BIRTHDAY, MY LOVE ♥",
+  letterTitle: "HAPPY BIRTHDAY PAYO, MY LOVE ♥",
   letter:
 `It's your special day,
 and every day with you feels special too.
 
-Thank you for every laugh, every hug,
+Thank you for every laugh, every happiness,
 every random midnight talk and every
 little moment that made my heart smile.
 
@@ -367,7 +367,7 @@ You are the best part of my life.
 I hope today brings you all the happiness
 you give me every single day.
 
-Happy birthday, my girl. I love you. ♥`,
+Happy birthday, my Babe. I wish you got all of them that you want. ♥`,
   missText: "I MISS YOU",
   finalText: "I LOVE YOU",
   /* Photos: your 12 pictures are already built in (PHOTO_DATA above). To change one, replace its entry with an image
@@ -717,7 +717,7 @@ $('#wp').onclick=e=>{ const p=$('#wp'); p.classList.remove('shake'); void p.offs
 function onChoose(){
   $$('.penbtn').forEach(b=>b.classList.remove('opening'));
   $$('.penbtn .pwrap').forEach(w=>setMood(w,w.closest('.penbtn').classList.contains('done')?'happy':'idle'));
-  type($('#chooseSub'), visited.size===3 ? 'You opened every surprise 💖 tap one to see it again' : 'Each one has something special to say ✨', 40);
+  type($('#chooseSub'), visited.size===3 ? 'You opened every surprise 💖 tap one to see it again' : 'Each one has something special for you ✨', 40);
   renderDots();
 }
 
